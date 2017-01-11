@@ -15,9 +15,6 @@
 	)
 	(
 		// Users to add ports here
-		output wire[31:0] res,
-		output wire[31:0] stat,
-
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -71,9 +68,7 @@
 		.S_AXI_RRESP(s00_axi_rresp),
 		.S_AXI_RVALID(s00_axi_rvalid),
 		.S_AXI_RREADY(s00_axi_rready),
-		.irq(irq),
-		.stat(stat),
-		.res(res)
+		.irq(irq)
 	);
 
 	// Add user logic here
